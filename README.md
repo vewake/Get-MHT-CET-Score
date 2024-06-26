@@ -12,4 +12,3 @@ https://github.com/hydroei/get-MHT-CET-score/assets/169121210/595073d8-b54a-4a68
 
 
 
-Thanks CHATGPT for converting the python code int PHP
