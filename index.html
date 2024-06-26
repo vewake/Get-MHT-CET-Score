@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Fetch Form</title>
+</head>
+<style>/* styles.css */
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    h2 {
+        color: #333;
+    }
+    
+    form {
+        margin-top: 20px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: #666;
+    }
+    
+    input[type="text"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 15px;
+    }
+    
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    
+    @media (max-width: 600px) {
+        .container {
+            padding: 10px;
+        }
+    }
+    </style>
+<body>
+    <h2>Score Fetch Form</h2>
+    <form action="process_form.php" method="post">
+        <label for="appno">Application Number:</label><br>
+        <input type="text" id="appno" name="appno" required><br><br>
+        
+        <label for="dob">Date of Birth (DD/MM/YYYY):</label><br>
+        <input type="text" id="dob" name="dob" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
